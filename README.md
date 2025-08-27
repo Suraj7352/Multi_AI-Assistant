@@ -63,3 +63,49 @@ Follow these steps to convert your Python application into a standalone Windows 
 9.  **Ready to Use:**
     You can now use your Multi-AI Assistant as a convenient Windows application!
 ```
+### Instructions for Linux Application
+
+To convert this Python application into a standalone executable for Linux:
+
+1.  **Install PyInstaller:**
+    ```bash
+    pip install pyinstaller
+    ```
+
+2.  **Move to your project directory:**
+    Open your terminal and navigate to the directory where your main Python file (e.g., `yourpython_file.py`) is located.
+    ```bash
+    cd /path/to/your/pythonfile/directory
+    ```
+
+3.  **Bundle your application:**
+    Run PyInstaller with the `--onefile` option to create a single executable.
+    ```bash
+    pyinstaller --onefile yourpython_file.py
+    ```
+    (Replace `yourpython_file.py` with the actual name of your primary Python script.)
+
+4.  **Wait for the process to complete:**
+    PyInstaller will take some time to bundle all necessary files and dependencies.
+
+5.  **Locate your executable:**
+    After completion, a `dist` folder will be created in your current location. Inside this `dist` folder, you will find your standalone Linux application. It will typically have the same name as your Python file (e.g., `yourpython_file`) without any file extension.
+
+6.  **Run the application:**
+    Navigate into the `dist` folder and run the executable from your terminal:
+    ```bash
+    cd dist
+    ./yourpython_file
+    ```
+    (You might need to grant execute permissions first: `chmod +x yourpython_file`)
+
+7.  **Initial Setup (Application Specific):**
+    Once the application starts:
+    *   Go to the `Setting` section.
+    *   Enter your Gemini API key.
+    *   Save the API key.
+
+8.  **Enjoy your Multi-AI Assistant!**
+    You can now use your Multi-AI Assistant as a standalone application on Linux.
+
+
